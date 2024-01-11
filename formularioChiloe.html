@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 3</title>
+    <style>
+        textarea{
+            width:100%;
+            max-width: 100%;
+            height: 150px;
+            box-sizing: border-box;
+            resize: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/funciones.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Form con Bootstrap</h2>
+        <form action="formulario.html" method="post" name="datos">
+            <div class="form-group">
+                <label for="rut">Rut: </label>
+                <input type="text" id="rut" name="rut" placeholder="Digite su rut..." class="form-control" minlength="9" maxlength="10" required>
+            </div>
+            <div class="form-group">
+                <label for="nom">Nombre: </label>
+                <input type="text" id="nom" name="nom" placeholder="Ingrese su Nombre..." class="form-control" minlength="3" maxlength="20" required>
+            </div>
+            <div class="form-group">
+                <label for="apep">Apellido Paterno: </label>
+                <input type="text" id="apep" name="apep" placeholder="Ingrese su apellido Paterno..." class="form-control" minlength="3" maxlength="20" required>
+            </div>
+            <div class="form-group">
+                <label for="apem">Apellido Materno: </label>
+                <input type="text" id="apem" name="apem" placeholder="Ingrese su apellido Materno..." class="form-control" minlength="3" maxlength="20" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Ingrese su fecha de nacimiento: </label><br>
+                <input type="date" id="fecha" name="fecha"><br><br>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad: </label>
+                <input type="text" id="edad" name="edad" placeholder="Ingrese su edad..." class="form-control" min="18" max="35" maxlength="2" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Ingrese su Correo: </label>
+                <input type="email" id="correo" name="correo" placeholder="feli.sandovals@duocuc.cl" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="profe">Ingrese su Profesión: </label>
+                <input type="text" id="profe" name="profe" placeholder="Ingrese su Profesión..." class="form-control" minlength="20" maxlength="30" required>
+            </div>
+            <div>
+                <label for="genero">Género:  </label>
+                <select id="genero" class="form-control">
+                    <option value="error">Seleccione un Género...</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="motivo">Motivo por la cual postula:  </label>
+                <select id="motivo" class="form-control">
+                    <option value="error">Seleccione un motivo...</option>
+                    <option value="Me interesa el puesto de trabajo">Me interesa el puesto de trabajo</option>
+                    <option value="Me gusta la empresa y su enfoque">Me gusta la empresa y su enfoque</option>
+                    <option value="Desarrollar habilidades y experiencias significativas">Desarrollar habilidades y experiencias significativas</option>
+                    <option value="Otro Motivo">Otro Motivo</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="celu">Celular: </label>
+                <input type="number" id="celu" name="celu" placeholder="Ingrese su numero..." class="form-control" minlength="9" maxlength="12" required>
+            </div>
+            <div class="form-group">
+                <label for="carta">Resultados: </label>
+                <br>
+                <textarea name="carta" id="carta"></textarea>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button onclick="MostrarDatos()" class="btn btn-outline-danger">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </form>
+    </div>
+    
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
